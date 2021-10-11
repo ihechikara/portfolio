@@ -4,13 +4,7 @@ ScrollOut({
 
 const btn = document.getElementById("btn-menu");
 const menu = document.getElementById("menu");
-const links = document.querySelectorAll('.nav-links');
-let currentYear = new Date().getFullYear();
-let yearValue = document.getElementById("year") 
-
-yearValue.textContent = currentYear;
-
-console.log(currentYear)
+const links = document.querySelectorAll('.nav-links')
 
 btn.addEventListener("click", () => {
   if (menu.classList.contains("hidden")) {
@@ -29,5 +23,7 @@ for (var i = 0; i < links.length; i++) {
 }
 
 
+let currentYear = new Date().getFullYear();
 
+document.getElementById("year").textContent = currentYear;
 
